@@ -1,21 +1,24 @@
 # Joymouse
-A mouse replacement using an Arduino Micro, joystick, and rotary encoder.
+A mouse replacement using an Arduino Micro (Mega32u4), joystick, and rotary encoder.
 
 Analog joystick:              <br />
-
-    Power         5V              
-    Ground                        
-                x-axis        pin A0     
-                y-axis        pin A1      
-                left click    pin D3      
+              
+    GND          
+    +5V
+    VRx         x-axis        pin A0     
+    VRy         y-axis        pin A1      
+    SW          left click    pin D3      
                 
 -------------------------------------------
 
 Rotary encoder:               <br />
 
-      Power       5V
-      Ground      
-      scroll up     pin D6       
-      scroll down   pin D7        
-      right click   pin D4       
+      CLK       right click   pin D4
+      DT        scroll up     pin D6
+      SW        scroll down   pin D7
+      +
+      GND                    
+
+
+Modified the example sketch named JoystickMouseControl. Be aware that this sketch is only meant to work for the Micro or Leonardo.
   
